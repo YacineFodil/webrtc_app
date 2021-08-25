@@ -1,0 +1,31 @@
+@import "../../style/mixins.scss";
+
+.stream {
+  .btn-editor-toggle {
+    @include btn();
+    background: var(--light-color);
+  }
+
+.btn-submit {
+   @include btn();
+    margin-bottom: 1rem;
+    background: var(--primary-color);
+    color: var(--text-light-color);
+  }
+  
+}
+
+.no-user-message {
+  margin-top: 6rem;
+  color: var(--text-light-color);
+}
+
+@media screen and (max-width: 420px) {
+  .home {
+    .no-user-message {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
